@@ -1,5 +1,5 @@
 prompt = 'Please enter how old are you? '
-prompt += ("\nEnter 'quit' when you are finished.")
+prompt += ("\nEnter 'quit' when you are finished. ")
 
 while True:
     age = int(input(prompt))
