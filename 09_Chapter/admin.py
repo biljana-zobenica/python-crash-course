@@ -25,15 +25,30 @@ class User:
 class Admin(User):
     def __init__(self, first_name, last_name, username, email, location):
         super().__init__(first_name, last_name, username, email, location)
-        self.privileges = []
+        self.privileges = Privileges()
+
+class Privileges():
+    def __init__(self, privileges= []):
+        self.privileges = privileges
 
     def list_privileges(self):
-        print(f"These are your privileges: ")
-        for privilege in self.privileges:
-            print(f"- {privilege}")
+        if self.privileges:
+            print(f"These are your privileges: ")
+            for privilege in self.privileges:   
+                print(f"- {privilege}")
+        else:
+            print(f"User doesn't have privileges.")
 
 my_admin = Admin('Jack', 'Spark', 'jack123', 'jack123@email.com', 'Seattle')
-my_admin.privileges = ['can add post', 'can delete post', 'can ban user']
-
 my_admin.greet_user()
-my_admin.list_privileges()
+my_admin.privileges.list_privileges()
+
+print("Adding privileges...")
+
+my_admin_priveleges = [
+    'can reset passwords',
+    'can moderate discussions',
+    'can suspend accounts',
+    ]
+my_admin.privileges.privileges = my_admin_priveleges
+my_admin.privileges.list_privileges()
