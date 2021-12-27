@@ -1,3 +1,5 @@
+"""A class representing a restaurant."""
+
 class Restaurant:
     def __init__(self, name, cuisine_type):
         self.name = name.title()
@@ -9,7 +11,8 @@ class Restaurant:
     def open_restaurant(self):
         print(f"The {self.name} restaurant is open!")
 
-restaurant = Restaurant('Veggie', 'veggetarian')
+# lines commented out, since this file serves as a module
+# restaurant = Restaurant('Veggie', 'veggetarian')
 
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
