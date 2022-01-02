@@ -5,3 +5,5 @@ Luka
 Neven
 Biljana
 Pavle
+& C:/Users/Biljana/AppData/Local/Programs/Python/Python39/python.exe c:/Users/Biljana/Documents/python-crash-course/10_Chapter/programming_poll.py
+& C:/Users/Biljana/AppData/Local/Programs/Python/Python39/python.exe c:/Users/Biljana/Documents/python-crash-course/10_Chapter/programming_poll.py
